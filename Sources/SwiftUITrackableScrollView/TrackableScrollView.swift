@@ -8,7 +8,7 @@
 import SwiftUI
 
 @available(iOS 13.0, *)
-struct TrackableScrollView<Content>: View where Content: View {
+public struct TrackableScrollView<Content>: View where Content: View {
     let axes: Axis.Set
     let showIndicators: Bool
     @Binding var contentOffset: CGFloat
@@ -21,7 +21,7 @@ struct TrackableScrollView<Content>: View where Content: View {
         self.content = content()
     }
     
-    var body: some View {
+    public var body: some View {
         GeometryReader { outsideProxy in
             ScrollView(self.axes, showsIndicators: self.showIndicators) {
                 ZStack(alignment: self.axes == .vertical ? .top : .leading) {
