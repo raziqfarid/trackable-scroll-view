@@ -4,7 +4,7 @@
 import PackageDescription
 
 let package = Package(
-    name: "SwiftUITrackableScrollView",
+    name: "TrackableScrollView",
     platforms: [.iOS(.v13)],
     products: [
         .library(
