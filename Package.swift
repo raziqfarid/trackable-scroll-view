@@ -8,12 +8,12 @@ let package = Package(
     platforms: [.iOS(.v13)],
     products: [
         .library(
-            name: "TrackableScrollView",
-            targets: ["TrackableScrollView"]),
+            name: "SwiftUITrackableScrollView",
+            targets: ["SwiftUITrackableScrollView"]),
     ],
     targets: [
         .target(
-            name: "TrackableScrollView",
+            name: "SwiftUITrackableScrollView",
             dependencies: []),
     ],
     swiftLanguageVersions: [.v5]
