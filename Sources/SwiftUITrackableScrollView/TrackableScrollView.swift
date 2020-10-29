@@ -21,7 +21,7 @@ public struct TrackableScrollView<Content>: View where Content: View {
         self.content = content()
     }
     
-    var body: some View {
+    public var body: some View {
         GeometryReader { outsideProxy in
             ScrollView(self.axes, showsIndicators: self.showIndicators) {
                 ZStack(alignment: self.axes == .vertical ? .top : .leading) {
